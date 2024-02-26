@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Tienda de frutos secos</h1>
+        <div class="contenedor-carro">
+            <div class="contenedor-carro-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="icono-carro">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                </svg>
+                <div class="cont-productos">
+                    <span id="contador-productos">0</span>
+                </div>
+            </div>
+
+            <div class="contenedor-carro-productos hidden-carro">
+                <div class="fila-producto">
+                    <div class="carro-producto">
+                        <div class="info-carro-producto">
+                            <span class="cantidad-producto-carrito"></span>
+                            <p class="titulo-producto-carrito"></p>
+                            <span class="precio-producto-carrito"></span>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="icono-quitar">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5m6 4.125l2.25 2.25m0 0l2.25 2.25M12 13.875l2.25-2.25M12 13.875l-2.25 2.25M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="carro-total">
+                    <h3>Total:</h3>
+                    <span class="total-pagar">$0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="contenedor-items">
+        <div class="item">
+            <figure>
+                <img src="imagenes/castañadecaju.png" alt="castaña de caju">
+            </figure>
+            <div class="info-producto">
+                <h2>Castaña de cajú</h2>
+                <p class="precio">$100</p>
+                <button class="btn-añadir-carro">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="imagenes/nuez.png" alt="nuez">
+            </figure>
+            <div class="info-producto">
+                <h2>Nuez</h2>
+                <p class="precio">$200</p>
+                <button class="btn-añadir-carro">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="imagenes/pistacho.png" alt="pistacho">
+            </figure>
+            <div class=" info-producto">
+                <h2>Pistacho</h2>
+                <p class="precio">$500</p>
+                <button class="btn-añadir-carro">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="imagenes/mani.png" alt="mani">
+            </figure>
+            <div class="info-producto">
+                <h2>Maní</h2>
+                <p class="precio">$100</p>
+                <button class="btn-añadir-carro">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="imagenes/almendra.png" alt="almendra">
+            </figure>
+            <div class="info-producto">
+                <h2>Almendra</h2>
+                <p class="precio">$125</p>
+                <button class="btn-añadir-carro">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="imagenes/avellana.png" alt="avellana">
+            </figure>
+            <div class="info-producto">
+                <h2>Avellana</h2>
+                <p class="precio">$180</p>
+                <button class="btn-añadir-carro">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
